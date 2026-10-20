@@ -1,7 +1,7 @@
 body {
     background-color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
 }
 /*header + navigation*/
@@ -16,6 +16,9 @@ body {
 
 #logotop {
     max-width: 10%;
+}
+h1 {
+    font-family: cursive;
 }
 .menu {
     display: none;
@@ -44,9 +47,52 @@ body {
 #welcome {
     text-align: center;
 }
+#welcome button {
+    background-color: #CFB795;
+    border-radius: 5px;
+    border: solid black 2px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Utrustning du inte använder text + bild*/
+
+#sell {
+    background-color: #EDDCC4;
+    text-align: center;
+    margin-top: 5%;
+    padding: 2%;
+}
+#sellImg {
+    max-width: 20%;
+    border: solid black 2px;
+}
+#sell button {
+     background-color: #CFB795;
+    border-radius: 5px;
+    border: solid black 2px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #D9D9D9;
+    display: grid;
+    justify-items: center;
+    margin-top: 5%;
+}
+#logobot {
+    max-width: 15%;
+    margin: 0;
+    padding: 0;
+}
 
 
 /* Större skärm */
+
+/*Meny*/
 
 @media (min-width: 760px) {
     .menu-toggle {
@@ -61,4 +107,18 @@ body {
         display: flex;
         gap: 20px;
     }
+
+    /*Footer*/
+
+    footer {
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: start;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+    footer p {
+        font-family:cursive ;
+    }
+    #logobot
 }
