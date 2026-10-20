@@ -121,6 +121,23 @@ footer {
         margin: 0;
         background-color: #c9ac8f7c
     }
+
+    /*Sell*/
+    #sell {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items:center;
+    }
+    #sellImg {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        max-width: 70%;
+    }
+    .selltext {
+        max-width: 70%
+
+    }
+
   
 
     /*Footer*/
