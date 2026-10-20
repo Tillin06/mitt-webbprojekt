@@ -107,6 +107,21 @@ footer {
         display: flex;
         gap: 20px;
     }
+    /*Welcome*/
+    #welcome {
+        position: relative;
+        text-align: center;
+    }
+    .welcometext {
+        position: absolute;
+        top: 0px;
+        bottom: 3px;
+        max-width: 50%;
+        padding-top: 10%;
+        margin: 0;
+        background-color: #c9ac8f7c
+    }
+  
 
     /*Footer*/
 
@@ -118,7 +133,10 @@ footer {
         grid-template-columns: 1fr 1fr 2fr;
     }
     footer p {
-        font-family:cursive ;
+        font-family:cursive;
+        font-size: 1.1rem;
     }
-    #logobot
+    #logobot {
+        max-width: 30%;
+    }
 }
