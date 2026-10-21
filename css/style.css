@@ -110,6 +110,7 @@ footer {
     background-image: url(../images/pexels-wood-1853403.jpg);
     background-color: #CFB795;
     margin: 5%;
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: 1fr;
     padding: 3%;
@@ -172,6 +173,17 @@ article img {
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.toppen button{
+    margin-left: 10%;
+    margin-top: 2%;
+    background-color: #CFB795;
+    border-radius: 5px;
+    border: solid black 2px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 8%;
+
+}
 a:hover {
     color: #D9D9D9;
 }
@@ -190,6 +202,7 @@ button:hover {
     border: solid rgb(135, 134, 134) 2px;
     color: rgb(116, 114, 114);
 }
+
 
 /* Större skärm */
 
