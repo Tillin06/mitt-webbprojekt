@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #f3eadd;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     margin: 0;
@@ -107,12 +107,14 @@ footer {
 
 /*Show Products*/
 #showProducts{
-    background-color: #EDDCC4;
+    background-image: url(../images/pexels-wood-1853403.jpg);
+    background-color: #CFB795;
     margin: 5%;
     display: grid;
     grid-template-columns: 1fr;
     padding: 3%;
-    border: solid black 2px;
+    border: solid black 1px;
+    border-radius: 5px;
 }
 article img {
     max-width: 50%;
@@ -121,42 +123,47 @@ article img {
     border: solid black 2px;
 }
 #träns {
-    border: solid black 1px;
-    border-radius: 3px;
+    border: solid black 2px;
+    border-radius: 5px;
     padding: 3%;
     margin: 2%;
-    background-color: #CFB795;
+    background-color: #EDDCC4;
+    
 }
 #grimmaOrange {
-    border: solid black 1px;
-    border-radius: 3px;
+    border: solid black 2px;
+    border-radius: 5px;
     padding: 3%;
     margin: 2%;
-    background-color: #CFB795;
+    background-color: #EDDCC4;
 }
 #tränsFull {
-    border: solid black 1px;
-    border-radius: 3px;
+    border: solid black 2px;
+    border-radius: 5px;
     padding: 3%;
     margin: 2%;
-    background-color: #CFB795;
+    background-color: #EDDCC4;
 }
 #täcke {
-    border: solid black 1px;
-    border-radius: 3px;
+    border: solid black 2px;
+    border-radius: 5px;
     padding: 3%;
     margin: 2%;
-    background-color: #CFB795;
+    background-color: #EDDCC4;
 }
 #grimmaLäder {
-    border: solid black 1px;
-    border-radius: 3px;
+    border: solid black 2px;
+    border-radius: 5px;
     padding: 3%;
     margin: 2%;
-    background-color: #CFB795;
+    background-color: #EDDCC4;
 }
 .hittat {
     text-align: center;
+    background-color: #EDDCC4;
+    padding: 1%;
+    border: solid black 1px;
+    border-radius: 5px;
 }
 .hittat button {
     background-color: #CFB795;
@@ -169,13 +176,19 @@ a:hover {
     color: #D9D9D9;
 }
 button:hover {
-    background-color: #D9D9D9;
+    background-color: #f7efe4;
+    border: solid rgb(135, 134, 134) 2px;
+    color: rgb(116, 114, 114);
 }
 #welcome button:hover {
-    background-color: #D9D9D9;
+    background-color: #f7efe4;
+    border: solid rgb(135, 134, 134) 2px;
+    color: rgb(116, 114, 114);
 }
 #sell button:hover {
-    background-color: #D9D9D9;
+    background-color: #f7efe4;
+    border: solid rgb(135, 134, 134) 2px;
+    color: rgb(116, 114, 114);
 }
 
 /* Större skärm */
