@@ -82,6 +82,7 @@ footer {
     display: grid;
     justify-items: center;
     margin-top: 5%;
+    bottom: 0;
 }
 #logobot {
     max-width: 15%;
@@ -201,6 +202,52 @@ button:hover {
     background-color: #f7efe4;
     border: solid rgb(135, 134, 134) 2px;
     color: rgb(116, 114, 114);
+}
+/*Kontakt sida*/
+#buy {
+    background-color: #EDDCC4;
+    margin: 5%;
+    padding: 3%;
+    border: solid black 1px;
+    border-radius: 4px;
+}
+#sellProduct {
+    background-color: #EDDCC4;
+    margin: 5%;
+    padding: 3%;
+    border: solid black 1px;
+    border-radius: 4px;
+}
+
+#questions {
+    background-color: #EDDCC4;
+    margin: 5%;
+    padding: 3%;
+    border: solid black 1px;
+    border-radius: 4px;
+}
+fieldset {
+    border: 0;
+}
+legend {
+    font-size: 1.2rem;
+    border-bottom: solid black 1px;
+}
+input[type=submit] {
+    background-color: #CFB795;
+    border: solid black 1.5px;
+    border-radius: 4px;
+    padding: 0.5% 1% 0.5% 1%;
+    margin: 1% 1% 1% 0;
+    transition: background-color 0.2s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+}
+input[type=submit]:hover {
+    background-color: #D9D9D9;
+}
+.hidden {
+    display: none;
 }
 
 

@@ -21,7 +21,14 @@
         </nav>
     </header>
     <main>
-        <section id="buy">
+        <div class="choose">
+        <h2>Vad behöver du hjälp med?</h2>
+        <p>Klicka på alternativet som stämmer bäst överens..</p>
+        <button id="btn1">Köp</button>
+        <button id="btn2">Sälj</button>
+        <button id="btn3">Frågor</button>
+        </div>
+        <section id="buy" class="hidden">
             <form>
                 <fieldset>
                     <legend>Kontakta oss för köp av produkt här:</legend>
@@ -43,7 +50,7 @@
                 </fieldset>
             </form>
         </section>
-        <section id="sellProduct">
+        <section id="sellProduct" class="hidden">
             <form>
                 <fieldset>
                     <legend>Kontakta oss för att sälja här:</legend>
@@ -66,7 +73,7 @@
                 </fieldset>
             </form>
         </section>
-        <section id="question">
+        <section id="questions" class="hidden">
             <form>
                 <fieldset>
                     <legend>Frågor:</legend>
