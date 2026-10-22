@@ -204,6 +204,60 @@ button:hover {
     color: rgb(116, 114, 114);
 }
 /*Kontakt sida*/
+.choose {
+    background-color: #EDDCC4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    background-color: #EDDCC4;
+    padding: 1%;
+}
+#btn1 {
+     background-color: #CFB795;
+    border-radius: 5px;
+    border: solid black 1px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.3s;
+}
+#btn2 {
+     background-color: #CFB795;
+    border-radius: 5px;
+    border: solid black 1px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.3s;
+}
+#btn3 {
+     background-color: #CFB795;
+    border-radius: 5px;
+    border: solid black 1px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.3s;
+}
+#btn1:hover {
+    background-color: #f7efe4;
+    border: solid rgb(135, 134, 134) 2px;
+    color: rgb(116, 114, 114);
+}
+#btn2:hover {
+    background-color: #f7efe4;
+    border: solid rgb(135, 134, 134) 2px;
+    color: rgb(116, 114, 114);
+}
+#btn3:hover {
+    background-color: #f7efe4;
+    border: solid rgb(135, 134, 134) 2px;
+    color: rgb(116, 114, 114);
+}
 #buy {
     background-color: #EDDCC4;
     margin: 5%;
