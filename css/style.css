@@ -303,6 +303,9 @@ input[type=submit]:hover {
 .hidden {
     display: none;
 }
+#foot {
+    margin-top: 20%;
+}
 
 
 /* Större skärm */
