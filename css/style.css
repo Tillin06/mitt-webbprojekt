@@ -303,8 +303,17 @@ input[type=submit]:hover {
 .hidden {
     display: none;
 }
+.nameError {
+    color: red;
+}
+.emailError {
+    color:red;
+}
+.textError {
+    color: red;
+}
 #foot {
-    margin-top: 20%;
+    margin-top: 100%;
 }
 
 
@@ -329,6 +338,9 @@ input[type=submit]:hover {
     #welcome {
         position: relative;
         text-align: center;
+    }
+    #welcomeImg {
+        width: 100%;
     }
     .welcometext {
         position: absolute;
@@ -378,5 +390,8 @@ input[type=submit]:hover {
     }
     #logobot {
         max-width: 20%;
+    }
+    #foot {
+        margin-top: 30%;
     }
 }

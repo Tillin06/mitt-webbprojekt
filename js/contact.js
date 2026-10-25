@@ -1,11 +1,19 @@
 "use strict";
+//knappar som visar forms
 const buttonBuy = document.querySelector("#btn1");
 const buttonSell = document.querySelector("#btn2");
 const buttonAsk = document.querySelector("#btn3");
 const buy = document.querySelector("#buy");
-const sell = document.querySelector("#sellProduct")
-const question =document.querySelector("#questions")
+const sell = document.querySelector("#sellProduct");
+const question = document.querySelector("#questions");
+//forms
+const buyForm = document.querySelector("#productBuyForm");
+const sellForm = document.querySelector("#productSellForm");
+const askForm = document.querySelector("#askForm");
 
+
+
+//Visa/Dölja forms
 buttonBuy.addEventListener("click", function(){
     buy.classList.toggle("hidden")
 });
@@ -16,4 +24,99 @@ buttonSell.addEventListener("click", function(){
 
 buttonAsk.addEventListener("click", function(){
     question.classList.toggle("hidden")
+});
+
+//Valideraforms
+
+//Validera Köp formuläret
+function validateBuyForm() {
+const email = buyForm.querySelector(".mail");
+const name = buyForm.querySelector(".name");
+
+
+const emailError = buyForm.querySelector(".emailError");
+const nameError = buyForm.querySelector(".nameError");
+
+
+emailError.textContent = "";
+nameError.textContent = "";
+
+
+if (name.value.trim() === "") {
+    nameError.textContent = "Du måste fylla i ditt namn";
+}
+if (email.value.trim()=== "") {
+    emailError.textContent = "Du måste fylla i din e-postadress";
+}
+
+return nameError.textContent === "" && emailError.textContent === "";
+}
+
+buyForm.addEventListener("submit", function (event) {
+    if (!validateBuyForm()) {
+        event.preventDefault();
+    }
+});
+
+//Validera sälj formuläret
+function validateSellForm () {
+const email = sellForm.querySelector(".mail");
+const name = sellForm.querySelector(".name");
+const text = sellForm.querySelector(".text");
+
+const emailError = sellForm.querySelector(".emailError");
+const nameError = sellForm.querySelector(".nameError");
+const textError = sellForm.querySelector(".textError");
+
+
+textError.textContent = "";
+emailError.textContent = "";
+nameError.textContent = "";
+
+if (name.value.trim() === "") {
+    nameError.textContent = "Du måste fylla i ditt namn";
+}
+if (email.value.trim()=== "") {
+    emailError.textContent = "Du måste fylla i din e-postadress";
+}
+if (text.value.trim() === ""){
+    textError.textContent = "Du måste fylla i fältet"
+}
+return nameError.textContent === "" && emailError.textContent === "" && textError.textContent === "";
+}
+sellForm.addEventListener("submit", function (event) {
+    if (!validateSellForm()) {
+        event.preventDefault();
+    }
+});
+//Validera frågor formuläret
+function validateAskForm () {
+const email = askForm.querySelector(".mail");
+const name = askForm.querySelector(".name");
+const text = askForm.querySelector(".text");
+
+const emailError = askForm.querySelector(".emailError");
+const nameError = askForm.querySelector(".nameError");
+const textError = askForm.querySelector(".textError");
+
+
+textError.textContent = "";
+emailError.textContent = "";
+nameError.textContent = "";
+
+if (name.value.trim() === "") {
+    nameError.textContent = "Du måste fylla i ditt namn";
+}
+if (email.value.trim()=== "") {
+    emailError.textContent = "Du måste fylla i din e-postadress";
+}
+if (text.value.trim() === ""){
+    textError.textContent = "Du måste fylla i fältet"
+}
+return nameError.textContent === "" && emailError.textContent === "" && textError.textContent === "";
+}
+askForm.addEventListener("submit", function (event) {
+    if (!validateAskForm()) {
+        event.preventDefault();
+    }
 });

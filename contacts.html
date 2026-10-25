@@ -32,13 +32,15 @@
         <button id="btn3">Frågor</button>
         </div>
         <section id="buy" class="hidden">
-            <form>
+            <form id="productBuyForm">
                 <fieldset>
                     <legend>Kontakta oss för köp av produkt här:</legend>
                 <label for="name">Namn:</label><br>
-                <input type="text" id="name" name="name"><br>
+                <input type="text" class="name" name="name"><br>
+                <p class="nameError"></p>
                 <label for="mail">Mail:</label><br>
-                <input type="email" id="mail" name="mail"><br>
+                <input type="email" class="mail" name="mail"><br>
+                <p class="emailError"></p>
                 <input type="checkbox" id="product1" name="product1" value="Träns Remont">
                 <label for="product1">Träns Remont</label><br>
                 <input type="checkbox" id="product2" name="product2" value="Grimma Orange">
@@ -54,13 +56,15 @@
             </form>
         </section>
         <section id="sellProduct" class="hidden">
-            <form>
+            <form id="productSellForm">
                 <fieldset>
                     <legend>Kontakta oss för att sälja här:</legend>
                 <label for="name">Namn:</label><br>
-                <input type="text" id="name" name="name"><br>
+                <input type="text" class="name" name="name"><br>
+                <p class="nameError"></p>
                 <label for="mail">Mail:</label><br>
-                <input type="email" id="mail" name="mail"><br>
+                <input type="email" class="mail" name="mail"><br>
+                <p class="emailError"></p>
                 <label for="product">Produkttyp:</label><br>
                 <select id="product" name="product">
                     <option value="träns">Träns</option>
@@ -71,21 +75,25 @@
                     <option value="annat">Annat</option>
                 </select> <br>
                 <label for="information">Information om produkt:</label><br>
-                <input type="text" id="information" name="information"><br>
+                <input type="text" class="text" name="information"><br>
+                <p class="textError"></p>
                 <input type="submit" value="Skicka">
                 </fieldset>
             </form>
         </section>
         <section id="questions" class="hidden">
-            <form>
+            <form id="askForm">
                 <fieldset>
                     <legend>Frågor:</legend>
                     <label for="name">Namn:</label><br>
-                    <input type="text" id="name" name="name"><br>
+                    <input type="text" class="name" name="name"><br>
+                    <p class="nameError"></p>
                     <label for="mail">Mail:</label><br>
-                    <input type="email" id="mail" name="mail"><br>
+                    <input type="email" class="mail" name="mail"><br>
+                    <p class="emailError"></p>
                     <label for="question">Fråga:</label><br>
-                    <input type="text" id="question" name="question"><br>
+                    <input type="text" class="text" name="question"><br>
+                    <p class="textError"></p>
                     <input type="submit" value="Skicka">
                 </fieldset>
             </form>
