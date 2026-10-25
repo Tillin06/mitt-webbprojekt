@@ -1,10 +1,11 @@
+/*Body*/
 body {
     background-color: #f3eadd;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     margin: 0;
 }
-/*header + navigation*/
+/*header + navigation + footer till alla flikar*/
 
 .navigation {
     display: flex;
@@ -38,6 +39,23 @@ h1 {
     color: black;
     text-decoration: none;
 }
+/*Footer*/
+
+footer {
+    background-color: #D9D9D9;
+    display: grid;
+    justify-items: center;
+    margin-top: 5%;
+    bottom: 0;
+    justify-content: center;
+}
+#logobot {
+    max-width: 15%;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEM*/
 
 /*Välkommen text + bild*/
 #welcomeImg {
@@ -75,23 +93,6 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*Footer*/
-
-footer {
-    background-color: #D9D9D9;
-    display: grid;
-    justify-items: center;
-    margin-top: 5%;
-    bottom: 0;
-    justify-content: center;
-}
-#logobot {
-    max-width: 15%;
-    margin: 0;
-    padding: 0;
-}
-
-
 /*PRODUKTER*/
 
 /*Produkt text*/
@@ -107,7 +108,7 @@ footer {
 }
 
 
-/*Show Products*/
+/*Visa Produkter*/
 #showProducts{
     background-image: url(../images/pexels-wood-1853403.jpg);
     background-color: #CFB795;
@@ -161,6 +162,7 @@ article img {
     margin: 2%;
     background-color: #EDDCC4;
 }
+/*Knapp för att komma till kontaktsida*/
 .hittat {
     text-align: center;
     background-color: #EDDCC4;
@@ -175,6 +177,7 @@ article img {
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/*Knapp för att komma till toppen igen*/
 .toppen button{
     margin-left: 10%;
     margin-top: 2%;
@@ -186,6 +189,7 @@ article img {
     min-width: 8%;
 
 }
+/*Animation till alla knappar*/
 a:hover {
     color: #D9D9D9;
 }
@@ -204,7 +208,8 @@ button:hover {
     border: solid rgb(135, 134, 134) 2px;
     color: rgb(116, 114, 114);
 }
-/*Kontakt sida*/
+/*KONTAKT*/
+/*Knappar för att välja formulär*/
 .choose {
     background-color: #EDDCC4;
     display: flex;
@@ -220,6 +225,7 @@ button:hover {
     background-color: #EDDCC4;
     padding: 1%;
 }
+/*Köp knapp*/
 #btn1 {
      background-color: #CFB795;
     border-radius: 5px;
@@ -228,6 +234,7 @@ button:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: background-color 0.3s;
 }
+/*Sälj knapp*/
 #btn2 {
      background-color: #CFB795;
     border-radius: 5px;
@@ -236,6 +243,7 @@ button:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: background-color 0.3s;
 }
+/*Frågor knapp*/
 #btn3 {
      background-color: #CFB795;
     border-radius: 5px;
@@ -244,6 +252,7 @@ button:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: background-color 0.3s;
 }
+/*Animationer till knappar*/
 #btn1:hover {
     background-color: #f7efe4;
     border: solid rgb(135, 134, 134) 2px;
@@ -259,6 +268,7 @@ button:hover {
     border: solid rgb(135, 134, 134) 2px;
     color: rgb(116, 114, 114);
 }
+/*Bakgrund för de olika formulären*/
 #buy {
     background-color: #EDDCC4;
     margin: 5%;
@@ -281,6 +291,7 @@ button:hover {
     border: solid black 1px;
     border-radius: 4px;
 }
+/*Styling av formulär*/
 fieldset {
     border: 0;
 }
@@ -301,9 +312,11 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #D9D9D9;
 }
+/*Dölj formulär tills knappen trycks på*/
 .hidden {
     display: none;
 }
+/*Error meddelanden*/
 .nameError {
     color: red;
 }
@@ -313,6 +326,7 @@ input[type=submit]:hover {
 .textError {
     color: red;
 }
+/*Position av footer på kontakt sida*/
 #foot {
     margin-top: 100%;
 }
@@ -335,7 +349,7 @@ input[type=submit]:hover {
         display: flex;
         gap: 20px;
     }
-    /*Welcome*/
+    /*HEM*/
     #welcome {
         position: relative;
         text-align: center;
@@ -352,8 +366,6 @@ input[type=submit]:hover {
         margin: 0;
         background-color: #c9ac8f7c
     }
-
-    /*Sell*/
     #sell {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -369,13 +381,10 @@ input[type=submit]:hover {
         max-width: 70%
 
     }
-    /*Produkter*/
+    /*PRODUKTER*/
     #showProducts {
         grid-template-columns: 1fr 1fr;
     }
-
-  
-
     /*Footer*/
 
     footer {
@@ -393,6 +402,6 @@ input[type=submit]:hover {
         max-width: 20%;
     }
     #foot {
-        margin-top: 30%;
+        margin-top: 40%;
     }
 }

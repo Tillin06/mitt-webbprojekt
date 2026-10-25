@@ -37,11 +37,11 @@ const name = buyForm.querySelector(".name");
 const emailError = buyForm.querySelector(".emailError");
 const nameError = buyForm.querySelector(".nameError");
 
-
+//tar bort tidigare felmeddelanden
 emailError.textContent = "";
 nameError.textContent = "";
 
-
+//kollar om fältet är tomt
 if (name.value.trim() === "") {
     nameError.textContent = "Du måste fylla i ditt namn";
 }
@@ -51,7 +51,7 @@ if (email.value.trim()=== "") {
 
 return nameError.textContent === "" && emailError.textContent === "";
 }
-
+//Hindrar sidan från att laddas om samt kör funktion för validering
 buyForm.addEventListener("submit", function (event) {
     if (!validateBuyForm()) {
         event.preventDefault();
@@ -68,11 +68,12 @@ const emailError = sellForm.querySelector(".emailError");
 const nameError = sellForm.querySelector(".nameError");
 const textError = sellForm.querySelector(".textError");
 
-
+//tar bort tidigare felmeddelanden
 textError.textContent = "";
 emailError.textContent = "";
 nameError.textContent = "";
 
+//kollar om fältet är tomt
 if (name.value.trim() === "") {
     nameError.textContent = "Du måste fylla i ditt namn";
 }
@@ -84,6 +85,7 @@ if (text.value.trim() === ""){
 }
 return nameError.textContent === "" && emailError.textContent === "" && textError.textContent === "";
 }
+//Hindrar sidan från att laddas om samt kör funktion för validering
 sellForm.addEventListener("submit", function (event) {
     if (!validateSellForm()) {
         event.preventDefault();
@@ -99,11 +101,12 @@ const emailError = askForm.querySelector(".emailError");
 const nameError = askForm.querySelector(".nameError");
 const textError = askForm.querySelector(".textError");
 
-
+//tar bort tidigare felmeddelanden
 textError.textContent = "";
 emailError.textContent = "";
 nameError.textContent = "";
 
+//kollar om fältet är tomt
 if (name.value.trim() === "") {
     nameError.textContent = "Du måste fylla i ditt namn";
 }
@@ -115,6 +118,7 @@ if (text.value.trim() === ""){
 }
 return nameError.textContent === "" && emailError.textContent === "" && textError.textContent === "";
 }
+//Hindrar sidan från att laddas om samt kör funktion för validering
 askForm.addEventListener("submit", function (event) {
     if (!validateAskForm()) {
         event.preventDefault();
