@@ -83,6 +83,7 @@ footer {
     justify-items: center;
     margin-top: 5%;
     bottom: 0;
+    justify-content: center;
 }
 #logobot {
     max-width: 15%;
@@ -379,10 +380,10 @@ input[type=submit]:hover {
 
     footer {
         display: grid;
-        grid-auto-flow: column;
-        justify-items: start;
+        grid-auto-flow: row;
+        justify-items: center;
         align-items: center;
-        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
     }
     footer p {
         font-family:cursive;
