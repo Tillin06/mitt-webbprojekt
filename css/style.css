@@ -65,12 +65,14 @@ footer {
 #welcome {
     text-align: center;
 }
-#welcome button {
+.welcome-button {
     background-color: #CFB795;
     border-radius: 5px;
     border: solid black 2px;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
 /*Utrustning du inte använder text + bild*/
@@ -85,12 +87,14 @@ footer {
     max-width: 20%;
     border: solid black 2px;
 }
-#sell button {
+.sell-button {
     background-color: #CFB795;
     border-radius: 5px;
     border: solid black 2px;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
 /*PRODUKTER*/
@@ -166,27 +170,34 @@ article img {
 .hittat {
     text-align: center;
     background-color: #EDDCC4;
-    padding: 1%;
+    padding: 3%;
     border: solid black 1px;
     border-radius: 5px;
+    padding-top: 1%;
 }
 .hittat button {
     background-color: #CFB795;
     border-radius: 5px;
     border: solid black 2px;
-    padding: 10px;
+    padding: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*Knapp för att komma till toppen igen*/
-.toppen button{
-    margin-left: 10%;
-    margin-top: 2%;
+.toppen {
+    margin-top: 5%;
+
+}
+.toTop {
+    margin-left: 20%;
+    margin-top: 5%;
     background-color: #CFB795;
     border-radius: 5px;
     border: solid black 2px;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-width: 8%;
+    text-decoration: none;
+    color: black;
 
 }
 /*Animation till alla knappar*/

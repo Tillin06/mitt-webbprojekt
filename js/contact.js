@@ -30,8 +30,8 @@ buttonAsk.addEventListener("click", function(){
 
 //Validera Köp formuläret
 function validateBuyForm() {
-const email = buyForm.querySelector(".mail");
-const name = buyForm.querySelector(".name");
+const email = buyForm.querySelector("#mail-contact");
+const name = buyForm.querySelector("#name-contact");
 
 
 const emailError = buyForm.querySelector(".emailError");
@@ -60,9 +60,9 @@ buyForm.addEventListener("submit", function (event) {
 
 //Validera sälj formuläret
 function validateSellForm () {
-const email = sellForm.querySelector(".mail");
-const name = sellForm.querySelector(".name");
-const text = sellForm.querySelector(".text");
+const email = sellForm.querySelector("#mail-sell");
+const name = sellForm.querySelector("#name-sell");
+const text = sellForm.querySelector("#text-sell");
 
 const emailError = sellForm.querySelector(".emailError");
 const nameError = sellForm.querySelector(".nameError");
@@ -93,9 +93,9 @@ sellForm.addEventListener("submit", function (event) {
 });
 //Validera frågor formuläret
 function validateAskForm () {
-const email = askForm.querySelector(".mail");
-const name = askForm.querySelector(".name");
-const text = askForm.querySelector(".text");
+const email = askForm.querySelector("#mail");
+const name = askForm.querySelector("#name-ask");
+const text = askForm.querySelector("#text-ask");
 
 const emailError = askForm.querySelector(".emailError");
 const nameError = askForm.querySelector(".nameError");

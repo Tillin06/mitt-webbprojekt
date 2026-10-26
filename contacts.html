@@ -36,16 +36,16 @@
         <button id="btn3">Frågor</button>
         </div>
         <!--För att gömma formulär från början-->
-        <section id="buy" class="hidden">
+        <div id="buy" class="hidden">
             <!--Köp formulär med Namn/Mail/Produkt-->
             <form id="productBuyForm">
                 <fieldset>
                     <legend>Kontakta oss för köp av produkt här:</legend>
-                <label for="name">Namn:</label><br>
-                <input type="text" class="name" name="name"><br>
+                <label for="name-contact">Namn:</label><br>
+                <input type="text" id="name-contact" name="name-contact"><br>
                 <p class="nameError"></p>
-                <label for="mail">Mail:</label><br>
-                <input type="email" class="mail" name="mail"><br>
+                <label for="mail-contact">Mail:</label><br>
+                <input type="email" id="mail-contact" name="mail"><br>
                 <p class="emailError"></p>
                 <input type="checkbox" id="product1" name="product1" value="Träns Remont">
                 <label for="product1">Träns Remont</label><br>
@@ -60,17 +60,17 @@
                 <input type="submit" value="Skicka">
                 </fieldset>
             </form>
-        </section>
+        </div>
         <!--Sälj formulär med Namn/Mail/Sorts produkt/Information om produkt-->
-        <section id="sellProduct" class="hidden">
+        <div id="sellProduct" class="hidden">
             <form id="productSellForm">
                 <fieldset>
                     <legend>Kontakta oss för att sälja här:</legend>
-                <label for="name">Namn:</label><br>
-                <input type="text" class="name" name="name"><br>
+                <label for="name-sell">Namn:</label><br>
+                <input type="text" id="name-sell" name="name-sell"><br>
                 <p class="nameError"></p>
-                <label for="mail">Mail:</label><br>
-                <input type="email" class="mail" name="mail"><br>
+                <label for="mail-sell">Mail:</label><br>
+                <input type="email" id="mail-sell" name="mail"><br>
                 <p class="emailError"></p>
                 <label for="product">Produkttyp:</label><br>
                 <select id="product" name="product">
@@ -81,31 +81,31 @@
                     <option value="benskydd">Benskydd</option>
                     <option value="annat">Annat</option>
                 </select> <br>
-                <label for="information">Information om produkt:</label><br>
-                <input type="text" class="text" name="information"><br>
+                <label for="text-sell">Information om produkt:</label><br>
+                <input type="text" id="text-sell" name="information"><br>
                 <p class="textError"></p>
                 <input type="submit" value="Skicka">
                 </fieldset>
             </form>
-        </section>
+        </div>
         <!--Formulär för frågor med Namn/Mail/Fråga-->
-        <section id="questions" class="hidden">
+        <div id="questions" class="hidden">
             <form id="askForm">
                 <fieldset>
                     <legend>Frågor:</legend>
-                    <label for="name">Namn:</label><br>
-                    <input type="text" class="name" name="name"><br>
+                    <label for="name-ask">Namn:</label><br>
+                    <input type="text" id="name-ask" name="name-ask"><br>
                     <p class="nameError"></p>
                     <label for="mail">Mail:</label><br>
-                    <input type="email" class="mail" name="mail"><br>
+                    <input type="email" id="mail" name="mail"><br>
                     <p class="emailError"></p>
-                    <label for="question">Fråga:</label><br>
-                    <input type="text" class="text" name="question"><br>
+                    <label for="text-ask">Fråga:</label><br>
+                    <input type="text" id="text-ask" name="question"><br>
                     <p class="textError"></p>
                     <input type="submit" value="Skicka">
                 </fieldset>
             </form>
-        </section>
+        </div>
     </main>
     <!--Footer med kontaktinformation-->
         <footer id="foot">
