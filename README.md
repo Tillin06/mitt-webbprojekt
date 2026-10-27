@@ -6,7 +6,7 @@ Ett fiktivt företag som säljer begagnad hästutrustning för att värna om mil
 - CSS
 - JavaScript
 ## 🌸 Publicerad version 🌸
-...
+https://tillin06.github.io/mitt-webbprojekt/index.html
 ## 📧 Kontakt 📧
 *Tilda Öström Linde*
 tios2600@student.miun.se
