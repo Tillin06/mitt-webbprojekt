@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/contact.js" defer></script>
+    <title>EquiFind</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="navigation">
+        <img src="./images/EquiFind_logo.png" alt="EquiFind Logo" id="logotop">
+        <h1>EquiFind</h1>
+        <!--Knapp för meny mobilversion-->
+        <button class="menu-toggle">☰</button>
+        <nav class="menu">
+            <!--Länkar till sidorna-->
+            <ul>
+                <li><a href="./index.html">Hem</a></li>
+                <li><a href="./services.html">Produkter</a></li>
+                <li><a href="./contacts.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Knappar för alternativ av formulär-->
+        <div class="choose">
+        <h2>Vad behöver du hjälp med?</h2>
+        <p>Klicka på alternativet som stämmer bäst överens..</p>
+        </div>
+        <div class="buttons">
+        <button id="btn1">Köp</button>
+        <button id="btn2">Sälj</button>
+        <button id="btn3">Frågor</button>
+        </div>
+        <!--För att gömma formulär från början-->
+        <div id="buy" class="hidden">
+            <!--Köp formulär med Namn/Mail/Produkt-->
+            <form id="productBuyForm">
+                <fieldset>
+                    <legend>Kontakta oss för köp av produkt här:</legend>
+                <label for="name-contact">Namn:</label><br>
+                <input type="text" id="name-contact" name="name-contact"><br>
+                <p class="nameError"></p>
+                <label for="mail-contact">Mail:</label><br>
+                <input type="email" id="mail-contact" name="mail"><br>
+                <p class="emailError"></p>
+                <input type="checkbox" id="product1" name="product1" value="Träns Remont">
+                <label for="product1">Träns Remont</label><br>
+                <input type="checkbox" id="product2" name="product2" value="Grimma Orange">
+                <label for="product2">Grimma Orange</label><br>
+                <input type="checkbox" id="product3" name="product3" value="Träns Svart">
+                <label for="product3">Träns Svart</label><br>
+                <input type="checkbox" id="product4" name="product4" value="BackOnTrack Täcke">
+                <label for="product4">BackOnTrack Täcke</label><br>
+                <input type="checkbox" id="product5" name="product5" value="Grimma Läder">
+                <label for="product5">Grimma Läder</label><br>
+                <input type="submit" value="Skicka">
+                </fieldset>
+            </form>
+        </div>
+        <!--Sälj formulär med Namn/Mail/Sorts produkt/Information om produkt-->
+        <div id="sellProduct" class="hidden">
+            <form id="productSellForm">
+                <fieldset>
+                    <legend>Kontakta oss för att sälja här:</legend>
+                <label for="name-sell">Namn:</label><br>
+                <input type="text" id="name-sell" name="name-sell"><br>
+                <p class="nameError"></p>
+                <label for="mail-sell">Mail:</label><br>
+                <input type="email" id="mail-sell" name="mail"><br>
+                <p class="emailError"></p>
+                <label for="product">Produkttyp:</label><br>
+                <select id="product" name="product">
+                    <option value="träns">Träns</option>
+                    <option value="grimma">Grimma</option>
+                    <option value="täcke">Täcke</option>
+                    <option value="sadel">Sadel</option>
+                    <option value="benskydd">Benskydd</option>
+                    <option value="annat">Annat</option>
+                </select> <br>
+                <label for="text-sell">Information om produkt:</label><br>
+                <input type="text" id="text-sell" name="information"><br>
+                <p class="textError"></p>
+                <input type="submit" value="Skicka">
+                </fieldset>
+            </form>
+        </div>
+        <!--Formulär för frågor med Namn/Mail/Fråga-->
+        <div id="questions" class="hidden">
+            <form id="askForm">
+                <fieldset>
+                    <legend>Frågor:</legend>
+                    <label for="name-ask">Namn:</label><br>
+                    <input type="text" id="name-ask" name="name-ask"><br>
+                    <p class="nameError"></p>
+                    <label for="mail">Mail:</label><br>
+                    <input type="email" id="mail" name="mail"><br>
+                    <p class="emailError"></p>
+                    <label for="text-ask">Fråga:</label><br>
+                    <input type="text" id="text-ask" name="question"><br>
+                    <p class="textError"></p>
+                    <input type="submit" value="Skicka">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <!--Footer med kontaktinformation-->
+        <footer id="foot">
+          <img src="./images/EquiFind_logo.png" alt="EquiFind Logo" id="logobot">
+          <p>EquiFind</p>
+          <p>equifind@mail.com <br>070 123 45 67</p>
+          <p>© 2026 EquiFind</p>
+        </footer>
+</body>
+</html>
